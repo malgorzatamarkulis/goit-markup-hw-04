@@ -353,6 +353,9 @@ svg {
   box-sizing: content-box;
   line-height: 0.5;
 }
+.customers-background svg:hover {
+  border: 1px solid var(--ocean);
+}
 
 .logo-customers {
   width: 104px;
