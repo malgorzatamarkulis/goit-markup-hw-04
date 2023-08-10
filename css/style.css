@@ -118,11 +118,10 @@ a {
   letter-spacing: 0.32px;
 }
 
-.nav-link:hover {
-  width: 48px;
-  height: 4px;
-  flex-shrink: 0;
-  text-decoration: underline;
+.nav-link:hover,
+.contact-link:hover,
+.nav-link:focus,
+.contact-link:focus {
   color: var(--ocean);
 }
 
@@ -182,6 +181,11 @@ footer .inner-container {
   color: white;
 }
 
+.hero-section button:hover,
+.hero-section button:focus {
+  background-color: var(--ocean);
+}
+
 .boasting li {
   width: 264px;
 }
@@ -206,9 +210,20 @@ footer .inner-container {
   line-height: 1.5;
 }
 
-.filter-bar button:hover {
+.filter-bar button:hover,
+.filter-bar button:focus {
   background-color: var(--ocean);
   color: white;
+}
+
+.portfolio-list li {
+  border: 1px solid var(--cornflower);
+  transition: 0.2s all ease-in-out;
+}
+
+.portfolio-list li:hover,
+.portfolio-list li:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .justify-content-center {
@@ -219,17 +234,17 @@ footer .inner-container {
   background-color: var(--cloud);
 }
 
+.our-team .person-hover:hover {
+  background-color: var(--ocean);
+}
+
 .text-shadow {
   transition: text-shadow 0.3s;
 }
 
-.text-shadow:hover {
+.text-shadow:hover,
+.text-shadow:focus {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.contact-link:hover {
-  color: var(--ocean);
-  text-decoration: underline;
 }
 
 .font-color-cloud {
@@ -279,6 +294,10 @@ footer .inner-container {
   text-align: left;
 }
 
+.transition-quick-all {
+  transition: all 0.2s ease-in-out;
+}
+
 /* header */
 header > .container > * {
   margin: 25.5px 0;
@@ -324,7 +343,7 @@ svg {
   gap: 32px;
   flex-shrink: 0;
   align-items: flex-start;
-  border: 1px solid var(--cornflower);
+  /* border: 1px solid var(--cornflower); */
   background: var(--white);
 }
 
@@ -353,16 +372,19 @@ svg {
   box-sizing: content-box;
   line-height: 0.5;
 }
-.customers-background svg:hover {
+.customers-background svg:hover,
+.customers-background svg:focus {
   border: 1px solid var(--ocean);
 }
 
 .logo-customers {
   width: 104px;
   height: 56px;
+  cursor: pointer;
 }
 
-.logo-customers:hover {
+.logo-customers:hover,
+.logo-customers:focus {
   fill: var(--ocean);
 }
 
@@ -380,12 +402,11 @@ svg {
   justify-content: center;
   align-items: center;
   transition: 0.3s all ease-in-out;
-}
-main .person-hover:hover {
-  background-color: var(--ocean);
+  cursor: pointer;
 }
 
-footer .social-media-svg:hover {
+footer .social-media-svg:hover,
+footer .social-media-svg:focus {
   background-color: var(--green);
 }
 
