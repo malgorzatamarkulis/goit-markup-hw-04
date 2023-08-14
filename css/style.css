@@ -219,6 +219,7 @@ footer .inner-container {
 .portfolio-list li {
   border: 1px solid var(--cornflower);
   transition: 0.2s all ease-in-out;
+  max-width: 360px;
 }
 
 .portfolio-list li:hover,
